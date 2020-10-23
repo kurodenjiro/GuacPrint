@@ -1,0 +1,22 @@
+ {
+    "name": "GuacPrint",
+    "description" : "Show print dialog for files downloaded from Guacamole server",
+     "options_page": "options.html",
+    "icons": { "16": "favicon-16x16.png",
+           "48": "favicon-48x48.png",
+          "128": "favicon-128x128.png" }, 
+    
+ 	"permissions": ["declarativeContent","storage","file:///","tabs","downloads"],
+    "version": "1.2.0.0",
+    "manifest_version": 2,
+    "background": {
+      	
+      	"scripts": ["background.js"],
+      	"persistent": false
+    	},
+      "page_action": {
+          "default_icon": "favicon-48x48.png",
+          "default_title": "Guacamole print"
+        }
+      
+  }
